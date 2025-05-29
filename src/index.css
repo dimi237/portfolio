@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Sora:wght@100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-500: #71717a;
+  --color-zinc-800: #27272a;
+
+  --color-black: #000000;
+  --color-neutral: #404040;
+  --color-white: #FFFFFF;
+  --color-error: #ef4444;
+
+}
+
+* {
+  font-family: 'Sora', monospace;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
+p.text-large {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+
+p.text-medium {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+p.text-small {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
+button {
+  text-align: start;
+}
+
+button.text-large {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+
+button.text-medium {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+
+.text-display {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  letter-spacing: -0.02em;
+}
+
+.text-outlined {
+  font-size: 50px;
+  line-height: 56px;
+  letter-spacing: -0.06em;
+  font-family: monospace;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px;
+  -webkit-font-smoothing: antialiased
+}
+
+
+.text-display-medium {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+}
+
+.text-outlined-medium {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  font-family: monospace;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  -webkit-font-smoothing: antialiase
+}
+
+.subtitle {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+}
+
+.underlined {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+svg rect.cls-1 {
+  fill: none;
+}
