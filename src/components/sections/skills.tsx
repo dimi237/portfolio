@@ -1,6 +1,6 @@
 import { SkillsItem } from 'components/skills-item';
 import React from 'react';
-import { SpringIcon, PythonIcon, ReactIcon, JavaScriptIcon, ApiIcon, DockerIcon, NestIcon, NoSqlIcon, SqlIcon,JenskinsIcon } from 'components/icons';
+import { SpringIcon, PythonIcon, ReactIcon, JavaScriptIcon, ApiIcon, DockerIcon, NestIcon, NoSqlIcon, SqlIcon,JenskinsIcon,KafkaIcon,GraphQlIcon } from 'components/icons';
 
 const Skills: React.FC = () => {
     const skills = [
@@ -11,9 +11,11 @@ const Skills: React.FC = () => {
         { label: 'No Sql', icon: <NoSqlIcon />, description: 'A style sheet language for designing web pages.' },
         { label: 'Docker', icon: <DockerIcon />, description: 'The standard markup language for web pages.' },
         { label: 'Nest', icon: <NestIcon />, description: 'A version control system for tracking code changes.' },
-        { label: 'Api', icon: <ApiIcon />, description: 'A design pattern for building scalable web services.' },
+        { label: 'APIs & Architecture', icon: <ApiIcon />, description: 'A design pattern for building scalable web services.' },
         { label: 'Sql', icon: <SqlIcon />, description: 'A design pattern for building scalable web services.' },
         { label: 'Jenkins', icon: <JenskinsIcon />, description: 'A design pattern for building scalable web services.' },
+        { label: 'GraphQL', icon: <GraphQlIcon />, description: 'A design pattern for building scalable web services.' },
+        { label: 'Kafka', icon: <KafkaIcon />, description: 'A design pattern for building scalable web services.' },
     ];
 
     return (

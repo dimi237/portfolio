@@ -8,3 +8,5 @@ export * from './nest';
 export * from './nosql';
 export * from './sql';
 export * from './jenkins';
+export * from './kafka';
+export * from './graphql';
