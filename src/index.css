@@ -139,3 +139,20 @@ button.text-medium {
 svg rect.cls-1 {
   fill: none;
 }
+
+.scroll-none {
+  overflow: auto;
+  /* or overflow-y: scroll; for vertical-only scrolling */
+
+  /* Hide scrollbar for Chrome, Safari, Edge */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for Firefox */
+  scrollbar-width: none;
+
+  /* Hide scrollbar for IE/Edge (legacy) */
+  -ms-overflow-style: none;
+
+}
