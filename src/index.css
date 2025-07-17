@@ -154,5 +154,18 @@ svg rect.cls-1 {
 
   /* Hide scrollbar for IE/Edge (legacy) */
   -ms-overflow-style: none;
+}
 
+.main-container section,
+.main-container header,
+.main-container footer {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 32px;
+}
+
+.main-container header,
+.main-container footer {
+  padding: 24px 32px;
 }

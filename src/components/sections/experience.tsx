@@ -10,9 +10,9 @@ const Experiences: React.FC = () => {
     ];
 
     return (
-        <section className="px-[32px] py-[60px] flex flex-col items-center bg-black text-white">
+        <section className="flex flex-col items-center bg-black text-white">
             <span className="text-display font-regular">My <span className='font-extrabold'>Experience</span></span>
-            <ul className="w-full flex flex-col gap-4 mt-16">
+            <ul className="w-full flex flex-col gap-4 mt-16 items-center">
                 {experiences.map((experience) =>
                     <ExpereinceItem experience={experience} />
                 )}

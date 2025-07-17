@@ -19,8 +19,8 @@ const socials = [
 
 export default function ContactSection() {
     return (
-        <section className="px-[32px] py-[60px] flex flex-col md:flex-row items-center text-black gap-20">
-            <div className="flex-1 flex flex-col justify-center">
+        <section className="flex flex-col md:flex-row items-center text-black gap-20">
+            <div className="flex-1 flex flex-col justify-center max-w-[500px]">
                 <form className="flex flex-col gap-4">
                     <input
                         type="text"
@@ -52,7 +52,7 @@ export default function ContactSection() {
             </div>
             <div className="flex-1 flex flex-col justify-center rounded-lg gap-4">
 
-                <span className='text-display  font-extrabold'>
+                <span className='text-display font-extrabold'>
                     Let's  <span className='text-outlined font-extrabold'>talk</span> for something special
                 </span>
                 <p className="text-medium font-regular text-zinc-500">

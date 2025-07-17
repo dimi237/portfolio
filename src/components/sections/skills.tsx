@@ -19,7 +19,7 @@ const Skills: React.FC = () => {
     ];
 
     return (
-        <section className="px-[32px] py-[60px] flex flex-col items-center">
+        <section className="flex flex-col items-center">
             <span className="text-display font-regular">My <span className='font-extrabold'>Skills</span></span>
             <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-16  w-full">
                 {skills.map((skill) => 

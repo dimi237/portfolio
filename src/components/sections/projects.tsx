@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
     ];
 
     return (
-        <section className="px-[32px] py-[70px] flex flex-col items-center bg-black text-white h-screen overflow-y-scroll scroll-none">
+        <section className="flex flex-col items-center bg-black text-white h-screen overflow-y-scroll scroll-none">
             <span className="text-display font-regular">My <span className='font-extrabold'>Projects</span></span>
             <ul className="w-full flex flex-col gap-20 mt-16">
                 {projects.map((project, index) =>

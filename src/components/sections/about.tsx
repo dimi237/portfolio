@@ -5,7 +5,7 @@ const About: React.FC = () => {
 
 
     return (
-        <section className="px-[32px] py-[60px] flex flex-col md:flex-row items-start justify-between gap-[32px] bg-white text-black">
+        <section className="flex flex-col md:flex-row items-start justify-between gap-[32px] bg-white text-black ">
             <div className="h-full w-full md:w-1/2"><AboutIllustration /></div>
             <div className="h-full w-full md:w-1/2">
                 <span className="text-display font-regular py-16">About <span className='font-extrabold'>Me</span></span>

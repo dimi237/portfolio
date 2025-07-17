@@ -4,7 +4,7 @@ import React from 'react';
 
 const Header: React.FC = () => {
     return (
-        <header className="py-[24px] px-[32px] flex justify-between items-center">
+        <header className="flex justify-between items-center">
             <img src="/images/logo-black.svg" alt="Dimitri Signe" className='w-[139px]' />
             <div className="flex justify-center items-center">
                 <nav>
