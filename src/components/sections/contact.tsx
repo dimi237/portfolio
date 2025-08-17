@@ -20,7 +20,7 @@ const socials = [
 export default function ContactSection() {
     return (
         <section className="flex flex-col md:flex-row items-center text-black gap-20">
-            <div className="flex-1 flex flex-col justify-center max-w-[500px]">
+            <div className="w-full flex flex-col justify-center max-w-[500px]">
                 <form className="flex flex-col gap-4">
                     <input
                         type="text"
@@ -39,21 +39,22 @@ export default function ContactSection() {
                         className="border rounded px-4 py-2 h-24 resize-none focus:outline-none ring"
                         required
                     />
-                    <div className="flex items-center justify-between gap-4 mt-2">
+                    <div className="flex flex-col md:flex-row items-start justify-between gap-4 mt-2">
                         <button
                             type="submit"
                             className="text-white px-6 py-3 rounded font-semibold bg-black transition h-[48px]"
                         >
                             Get in touch
                         </button>
-                        {socials.map((social) => <SocialItem label={social.label} link={social.url} icon={social.icon} key={social.label} />)}
+                        <div className="flex items-center justify-between gap-4 mt-2">
+                            {socials.map((social) => <SocialItem label={social.label} link={social.url} icon={social.icon} key={social.label} />)}
+                        </div>
                     </div>
                 </form>
             </div>
-            <div className="flex-1 flex flex-col justify-center rounded-lg gap-4">
-
+            <div className="flex-1 flex flex-col justify-center rounded-lg gap-4 ">
                 <span className='text-display font-extrabold'>
-                    Let's  <span className='text-outlined font-extrabold'>talk</span> for something special
+                    Let's  <span className='text-outlined font-extrabold hidden md:inline'>talk</span> <span className='text-outlined-medium font-extrabold md:hidden'>talk</span> for something special
                 </span>
                 <p className="text-medium font-regular text-zinc-500">
                     Whether you have a question, a project idea, or just want to connect, feel free to reach out. I'm always open to new opportunities and collaborations!

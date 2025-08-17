@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Sora:wght@100..800&display=swap');
 @import "tailwindcss";
 
+
 @theme {
   --color-zinc-100: #f4f4f5;
   --color-zinc-200: #e4e4e7;
@@ -26,15 +27,11 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
-  line-height: 40px;
-  letter-spacing: -0.02em;
+   @apply text-[20px] leading-[28px] tracking-[-0.02em] sm:text-[24px]  sm:leading-[28px]  md:text-[28px] md:leading-[32px] lg:text-[32px] lg:leading-[40px];
 }
 
 h3 {
-  font-size: 28px;
-  line-height: 32px;
-  letter-spacing: -0.02em;
+   @apply text-[20px] leading-[28px] tracking-[-0.02em] sm:text-[24px]  sm:leading-[28px]  md:text-[28px] md:leading-[32px];
 }
 
 h4 {
@@ -44,15 +41,11 @@ h4 {
 }
 
 h5 {
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: -0.02em;
+  @apply sm:text-[14px] sm:leading-[20px] sm:tracking-[-0.02em] md:text-[18px] md:leading-[24px] md:tracking-[-0.02em] lg:text-[20px] lg:leading-[28px] lg:tracking-[-0.02em];
 }
 
 h6 {
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
+  @apply sm:text-[12px]  md:text-[16px] leading-[20px] md:tracking-[0.02em];
 }
 
 p.text-large {
@@ -90,23 +83,15 @@ button.text-medium {
   letter-spacing: 0.02em;
 }
 
+button.text-small {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
 .text-display {
-  font-size: 48px;
-  line-height: 56px;
-  letter-spacing: -0.02em;
-  letter-spacing: -0.02em;
+  @apply text-[28px] leading-[32px] md:text-[48px] md:leading-[56px]  tracking-[-0.02em];
 }
-
-.text-outlined {
-  font-size: 50px;
-  line-height: 56px;
-  letter-spacing: -0.06em;
-  font-family: monospace;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 3px;
-  -webkit-font-smoothing: antialiased
-}
-
 
 .text-display-medium {
   font-size: 28px;
@@ -114,13 +99,21 @@ button.text-medium {
   letter-spacing: -0.02em;
 }
 
+.text-outlined {
+  font-family: monospace;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2.6px;
+  -webkit-font-smoothing: antialiased;
+  @apply text-[28px] leading-[32px] md:text-[48px] md:leading-[50px] ; 
+
+}
+
 .text-outlined-medium {
   font-size: 28px;
   line-height: 32px;
-  letter-spacing: -0.02em;
   font-family: monospace;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px;
+  -webkit-text-stroke: 1.4px;
   -webkit-font-smoothing: antialiase
 }
 
@@ -162,7 +155,7 @@ svg rect.cls-1 {
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  padding: 60px 32px;
+  @apply py-[30px] md:py-[60px] px-[32px] ;
 }
 
 .main-container header,

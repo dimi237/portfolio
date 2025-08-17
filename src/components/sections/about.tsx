@@ -1,15 +1,16 @@
 import { AboutIllustration } from 'components/illustrations/about';
+import { AboutModibleIllustration } from 'components/illustrations/about-mobile';
 import React from 'react';
 
 const About: React.FC = () => {
 
 
     return (
-        <section className="flex flex-col md:flex-row items-start justify-between gap-[32px] bg-white text-black ">
-            <div className="h-full w-full md:w-1/2"><AboutIllustration /></div>
-            <div className="h-full w-full md:w-1/2">
-                <span className="text-display font-regular py-16">About <span className='font-extrabold'>Me</span></span>
-                <p className="text-small font-regular text-zinc-500">I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
+        <section className="flex flex-col md:flex-row items-start justify-between bg-white text-black ">
+            <div className="h-full w-full md:w-1/2"><AboutIllustration className='hidden lg:block' /><AboutModibleIllustration className='lg:hidden' /></div>
+            <div className="h-full w-full md:w-[47%]">
+                <span className="text-display font-regular">About <span className='font-extrabold'>Me</span></span>
+                <p className="text-small font-regular text-zinc-500 my-6">I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
                     <br />
                     <br />
                     I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.
