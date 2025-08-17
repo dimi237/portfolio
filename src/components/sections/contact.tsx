@@ -3,6 +3,7 @@ import { LinkedinIcon } from "components/icons/linkedin";
 import { ReeditIcon } from "components/icons/reedit";
 import { XIcon } from "components/icons/x";
 import { SocialItem } from "components/social-item";
+import { motion } from "motion/react";
 
 const CONTACT_EMAIL = "contact@dimitrisigne.me";
 const CONTACT_PHONE = "+237 698 949 789 / +237 682 820 667";
@@ -40,12 +41,12 @@ export default function ContactSection() {
                         required
                     />
                     <div className="flex flex-col md:flex-row items-start justify-between gap-4 mt-2">
-                        <button
+                        <motion.button  whileHover={{ scale: 1.05 }} 
                             type="submit"
                             className="text-white px-6 py-3 rounded font-semibold bg-black transition h-[48px]"
                         >
                             Get in touch
-                        </button>
+                        </motion.button>
                         <div className="flex items-center justify-between gap-4 mt-2">
                             {socials.map((social) => <SocialItem label={social.label} link={social.url} icon={social.icon} key={social.label} />)}
                         </div>
@@ -53,7 +54,7 @@ export default function ContactSection() {
                 </form>
             </div>
             <div className="flex-1 flex flex-col justify-center rounded-lg gap-4 ">
-                <span className='text-display font-extrabold'>
+                <span className='text-display font-extrabold text-black'>
                     Let's  <span className='text-outlined font-extrabold hidden md:inline'>talk</span> <span className='text-outlined-medium font-extrabold md:hidden'>talk</span> for something special
                 </span>
                 <p className="text-medium font-regular text-zinc-500">

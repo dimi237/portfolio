@@ -9,7 +9,7 @@ const About: React.FC = () => {
         <section className="flex flex-col md:flex-row items-start justify-between bg-white text-black ">
             <div className="h-full w-full md:w-1/2"><AboutIllustration className='hidden lg:block' /><AboutModibleIllustration className='lg:hidden' /></div>
             <div className="h-full w-full md:w-[47%]">
-                <span className="text-display font-regular">About <span className='font-extrabold'>Me</span></span>
+                <span className="text-display font-regular text-black">About <span className='font-extrabold'>Me</span></span>
                 <p className="text-small font-regular text-zinc-500 my-6">I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
                     <br />
                     <br />

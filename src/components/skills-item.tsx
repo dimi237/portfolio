@@ -5,9 +5,9 @@ export const SkillsItem = ({ skill, icon }: { skill: string, icon?: any }) =>
         {React.cloneElement(icon, {
             height: 50,
             width: 50,
-            className: "text-white group-hover:stroke-white group-hover:fill-white",
+            className: "text-white  group-hover:stroke-white group-hover:fill-white",
         })}
 
-        <h5 className="font-bold group-hover:text-white "> {skill}</h5>
+        <h5 className="font-bold group-hover:text-white text-black"> {skill}</h5>
 
     </div>

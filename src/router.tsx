@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 
 const Home = lazy(() => import("./pages/home"));
-const Yo = lazy(() => import("./pages/yo"));
 const Typography = lazy(() => import("./pages/design/typography"));
 
 
@@ -15,10 +14,6 @@ export default function Router() {
     {
       path: '/',
       element:  <Home /> ,
-    },
-      {
-      path: '/example',
-      element:  <Yo /> ,
     },
     {
       path: 'design/typography',

@@ -18,17 +18,17 @@ const Hero: React.FC = () => {
         <section>
             <div className="xl:mt-35 flex-col-reverse lg:flex-row flex lg:items-center justify-between">
                 <div className="flex flex-col gap-3 lg:gap-6 items-start lg:w-3/6">
-                    <span className="text-display font-regular text-wrap-nowrap">
+                    <span className="text-display font-regular text-wrap-nowrap text-black">
                         Hello I am <span className='text-display  font-extrabold'>Dimitri Signe</span>
                     </span>
-                    <span className='text-display  font-extrabold'>
+                    <span className='text-display font-extrabold text-black'>
                         Software <span className='text-outlined font-extrabold hidden md:inline'>Engineer</span>
                         <span className='text-outlined-medium font-extrabold md:hidden'>Engineer</span>
                     </span>
-                    <div className="text-display font-regular">
+                    <div className="text-display font-regular text-black">
                         Based in <span className='text-display  font-extrabold'>Cameroun</span>
                     </div>
-                    <p className="text-medium font-regular text-zinc-500 text-wrap wit">
+                    <p className="text-medium font-regular text-black text-zinc-500 text-wrap wit">
                         I'm Dimitri Signe Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
 
                     <div className="flex gap-[32px] items-center">
